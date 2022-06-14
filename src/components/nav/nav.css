@@ -1,0 +1,29 @@
+.header-container {
+    width: 40%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-bottom: none;
+}
+
+.header-container .container-nav .container-img img {
+    width: 8%;
+    border-radius: 50%;
+    margin: 15px 10px;
+}
+
+.header-container .container-nav .container-opcions {
+    position: absolute;
+    top: 35px;
+    left: 320px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.header-container .container-nav .container-opcions .opcion {
+    margin: -6px 20px;
+}
+
+.header-container .container-nav .container-opcions .opcion i {
+    font-size: 1.1rem;
+}
