@@ -37,7 +37,7 @@ const ButtonDarkMode = (props) => {
   }
 
   return (
-    <div className="container-btn">
+    <div className="container-btn-2">
       <label class="switch">
         <input onClick={darkMode} type="checkbox" />
         <span class="slider"></span>
