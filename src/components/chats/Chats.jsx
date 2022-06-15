@@ -1,4 +1,4 @@
-import React from 'react'
+import { React, useState } from 'react'
 import './chats.css'
 
 const Chats = () => {

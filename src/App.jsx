@@ -6,10 +6,12 @@ import LoginButton from './components/login/Login.jsx'
 import Chats from './components/chats/Chats'
 import { motion } from 'framer-motion'
 import Chat from './components/chat/Chat'
-
+import ButtonDarkMode from './components/buttonDark/DarkMode'
 
 function App() {
   const {  isAuthenticated } = useAuth0()
+  const [darkmode, setDarkmode] = useState(false)
+  const className = darkmode ? 'dark' : setDarkmode(!darkmode)
 
   return (
     <div className="container-all">
@@ -17,6 +19,7 @@ function App() {
         isAuthenticated ? 
         <>
           <Nav />
+          <ButtonDarkMode propiety={className} />
           <Chats />
           <Chat />
         </>

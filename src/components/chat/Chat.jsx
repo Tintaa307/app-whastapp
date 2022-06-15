@@ -29,7 +29,7 @@ const Chat = () => {
         </div>
       </nav>
       <div className="container-chat-msg">
-
+       
       </div>
       <div className="container-input-msg">
         <div className="container-emotes">

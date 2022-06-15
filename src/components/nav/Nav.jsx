@@ -1,10 +1,17 @@
-import React from 'react'
+import { React, useState } from 'react'
 import './nav.css'
 import { useAuth0 } from "@auth0/auth0-react"
 import { motion } from 'framer-motion'
 
-const Nav = () => { 
-  const { user ,isAuthenticated } = useAuth0()
+const Nav = (props) => { 
+  const { user } = useAuth0()
+
+  if(props.className === 'dark') {
+    document.querySelector('.header-container').classList.toggle('dark')
+    document.querySelector('.opcion').classList.toggle('dark')
+    document.querySelector('.container-img').classList.toggle('dark')
+  }
+
   return (
     <header className="header-container">
       <nav className="container-nav">
