@@ -24,6 +24,10 @@
     margin: 13px 10px;
 }
 
+.container-chat .container-chat-nav .container-content .container-img.dark img {
+    box-shadow: 0 0 12px #005400;
+}
+
 .container-chat .container-chat-nav .container-content .container-info-user {
     position: absolute;
     top: 10px;
@@ -35,7 +39,7 @@
     transition: 0.4s ease-in-out;
 }
 
-.container-chat .container-chat-nav .container-content .container-info-user.dark h1, p {
+.container-chat .container-chat-nav .container-content .container-info-user.dark h1 {
     color: #fff;
     transition: 0.4s ease-in-out;
 }
@@ -45,6 +49,11 @@
     margin-top: .4rem;
     transition: 0.4s ease-in-out;
     color: #000;
+}
+
+.container-chat .container-chat-nav .container-content .container-info-user.dark p {
+    color: #fff;
+    transition: 0.4s ease-in-out;
 }
 
 .container-chat .container-chat-nav .container-content .container-icons {

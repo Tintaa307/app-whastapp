@@ -7,6 +7,7 @@ import Chats from './components/chats/Chats'
 import { motion } from 'framer-motion'
 import Chat from './components/chat/Chat'
 import ButtonDarkMode from './components/buttonDark/DarkMode'
+import LogoutButton from './components/login/Logout.jsx'
 
 function App() {
   const {  isAuthenticated } = useAuth0()

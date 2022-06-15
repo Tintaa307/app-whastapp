@@ -13,7 +13,7 @@ const Chats = () => {
           <i class="ri-search-2-line"></i>
         </div>
         <div className="container-add-chat">
-          <button className='btn-add-chat' >Add new chat...</button>
+          <button className='btn-add-chat'>Add new chat...</button>
         </div>
       </div>
     </main>
