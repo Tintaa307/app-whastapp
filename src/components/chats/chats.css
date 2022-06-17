@@ -1,101 +1,100 @@
 .container-chats {
-    width: 40%;
-    height: 88.8vh;
-    background-color: rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-top: none;
-    overflow-y: scroll;
-    transition: 0.4s ease-in-out;
+  width: 40%;
+  height: 88.8vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-top: none;
+  overflow-y: scroll;
+  transition: 0.4s ease-in-out;
 }
 
 .container-chats.dark {
-    background-color: #111b21;
-    transition: 0.4s ease-in-out;
+  background-color: #111b21;
+  transition: 0.4s ease-in-out;
 }
 
 .container-chats .container-content .container-search {
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.589);
-    height: 80px;
-    transition: 0.4s ease-in-out;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.589);
+  height: 80px;
+  transition: 0.4s ease-in-out;
 }
 
 .container-chats .container-content .container-search.dark {
-    transition: 0.4s ease-in-out;
-    background-color: #111b21;
+  transition: 0.4s ease-in-out;
+  background-color: #111b21;
 }
 
 .container-chats .container-content .container-search.dark input {
-    color: #fff;
-    background-color: #2a3942;
-    transition: 0.4s ease-in-out;
-    border: none;
+  color: #fff;
+  background-color: #2a3942;
+  transition: 0.4s ease-in-out;
+  border: none;
 }
 
 .container-chats .container-content .container-search input {
-    display: block;
-    margin: auto;
-    position: relative;
-    top: 25px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    outline: none;
-    border-radius: 5rem;
-    width: 450px;
-    height: 30px;
-    padding-left: 35px;
-    padding-right: 20px;
-    color: #000;
-    transition: 0.4s ease-in-out;
-    background-color: #fff;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-radius: 5rem;
+  width: 450px;
+  height: 30px;
+  padding-left: 35px;
+  padding-right: 20px;
+  color: #000;
+  transition: 0.4s ease-in-out;
+  background-color: #fff;
 }
 
 .container-chats .container-content .container-search i {
-    position: absolute;
-    top: 100px;
-    left: 40px;
-    font-size: 1.2rem;
-    color: #000;
-
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  font-size: 1.2rem;
+  color: #000;
 }
 
 .container-chats .container-content .container-search.dark i {
-    color: #d1d7db;
+  color: #d1d7db;
 }
 
 .container-chats .container-content .container-add-chat {
-    width: 100%;
-    height: 60px;
-    background-color: #fff;
-    transition: 0.4s ease-in-out;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  transition: 0.4s ease-in-out;
 }
 
 .container-chats .container-content .container-add-chat button {
-    width: 100%;
-    height: 60px;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    font-size: 1.2rem;
-    color: #000;
-    text-align: left;
-    padding-left: 5px;
-    transition: 0.4s ease-in-out;
-    font-weight: bold;
-    z-index: 2;
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #000;
+  text-align: left;
+  padding-left: 5px;
+  transition: 0.4s ease-in-out;
+  font-weight: bold;
+  z-index: 2;
 }
 
 .container-chats .container-content .container-add-chat.dark button {
-    background-color: #2a3942;
-    color: #fff;
-    transition: 0.4s ease-in-out;
+  background-color: #2a3942;
+  color: #fff;
+  transition: 0.4s ease-in-out;
 }
 
 .container-chats .container-content .container-add-chat button:hover {
-    opacity: 0.8;
-    transition: 0.4s ease-in-out;
+  opacity: 0.8;
+  transition: 0.4s ease-in-out;
 }
 
 .container-chats .container-content .container-add-chat:hover {
-    background-color: rgba(255, 255, 255, 0.589);
-    transition: 0.4s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.589);
+  transition: 0.4s ease-in-out;
 }
