@@ -1,163 +1,171 @@
 .container-chat {
-    width: 60%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .container-chat .container-chat-nav {
-    width: 100%;
-    height: 70px;
-    transition: 0.4s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 70px;
+  transition: 0.4s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .container-chat .container-chat-nav.dark {
-    background-color: #202c33;
-    transition: 0.4s ease-in-out;
+  background-color: #202c33;
+  transition: 0.4s ease-in-out;
 }
 
 .container-chat .container-chat-nav .container-content .container-img img {
-    width: 5.5%;
-    border-radius: 50%;
-    margin: 13px 10px;
+  width: 5.5%;
+  border-radius: 50%;
+  margin: 13px 10px;
 }
 
 .container-chat .container-chat-nav .container-content .container-img.dark img {
-    box-shadow: 0 0 12px #005400;
+  box-shadow: 0 0 12px #005400;
 }
 
 .container-chat .container-chat-nav .container-content .container-info-user {
-    position: absolute;
-    top: 10px;
-    left: 70px;
+  position: absolute;
+  top: 10px;
+  left: 70px;
 }
 
 .container-chat .container-chat-nav .container-content .container-info-user h1 {
-    font-size: 1.2rem;
-    transition: 0.4s ease-in-out;
+  font-size: 1.2rem;
+  transition: 0.4s ease-in-out;
 }
 
-.container-chat .container-chat-nav .container-content .container-info-user.dark h1 {
-    color: #fff;
-    transition: 0.4s ease-in-out;
+.container-chat
+  .container-chat-nav
+  .container-content
+  .container-info-user.dark
+  h1 {
+  color: #fff;
+  transition: 0.4s ease-in-out;
 }
 
 .container-chat .container-chat-nav .container-content .container-info-user p {
-    font-size: .8rem;
-    margin-top: .4rem;
-    transition: 0.4s ease-in-out;
-    color: #000;
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+  transition: 0.4s ease-in-out;
+  color: #000;
 }
 
-.container-chat .container-chat-nav .container-content .container-info-user.dark p {
-    color: #fff;
-    transition: 0.4s ease-in-out;
+.container-chat
+  .container-chat-nav
+  .container-content
+  .container-info-user.dark
+  p {
+  color: #fff;
+  transition: 0.4s ease-in-out;
 }
 
 .container-chat .container-chat-nav .container-content .container-icons {
-    position: absolute;
-    top: 28px;
-    right: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    transition: 0.4s ease-in-out;
+  position: absolute;
+  top: 28px;
+  right: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  transition: 0.4s ease-in-out;
 }
 
 .container-chat .container-chat-nav .container-content .container-icons.dark i {
-    color: #fff;
-    transition: 0.4s ease-in-out;
+  color: #fff;
+  transition: 0.4s ease-in-out;
 }
 
 .container-chat .container-chat-nav .container-content .container-icons div {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 .container-chat .container-chat-msg {
-    height: 88.5%;
-    top: 70px;
-    right: 0;
-    background-image: url("https://descubrecomohacerlo.com/wp-content/uploads/2020/12/fondo-predeterminado-whatsapp.jpg");
-    background-size: 101%;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 0.4s ease-in-out;
-    overflow-y: scroll;
+  height: 88.5%;
+  top: 70px;
+  right: 0;
+  background-image: url("https://descubrecomohacerlo.com/wp-content/uploads/2020/12/fondo-predeterminado-whatsapp.jpg");
+  background-size: 101%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.4s ease-in-out;
+  overflow-y: scroll;
 }
 
 .container-chat .container-chat-msg.dark {
-    background-image: url("https://as01.epimg.net/meristation/imagenes/2019/11/11/betech/1573497171_487815_1573497337_sumario_normal.jpg");
-    background-size: 101%;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow-y: scroll;
-    transition: 0.4s ease-in-out;
+  background-image: url("https://as01.epimg.net/meristation/imagenes/2019/11/11/betech/1573497171_487815_1573497337_sumario_normal.jpg");
+  background-size: 101%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+  transition: 0.4s ease-in-out;
 }
 
 .container-chat .container-input-msg {
-    width: 100%;
-    height: 60px;
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.678);
-    transition: 0.4s ease-in-out;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.678);
+  transition: 0.4s ease-in-out;
 }
 
 .container-chat .container-input-msg.dark {
-    background-color: #202c33;
-    transition: 0.4s ease-in-out;
+  background-color: #202c33;
+  transition: 0.4s ease-in-out;
 }
 
 .container-chat .container-input-msg .container-emotes {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: rgba(0, 0, 0, 1);
 }
 
 .container-chat .container-input-msg .container-emotes i {
-    font-size: 1.5rem;
-    transition: 0.4s ease-in-out;
+  font-size: 1.5rem;
+  transition: 0.4s ease-in-out;
 }
 
 .container-chat .container-input-msg .container-emotes.dark i {
-    color: #d1d7db;
-    transition: 0.4s ease-in-out;
+  color: #d1d7db;
+  transition: 0.4s ease-in-out;
 }
 
 .container-chat .container-input-msg input {
-    position: relative;
-    top: 12px;
-    width: 660px;
-    margin-left: 60px;
-    height: 35px;
-    border-radius: 5rem;
-    outline: none;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    font-size: 0.9rem;
-    padding-left: 20px;
-    user-select: none;
-    transition: 0.4s ease-in-out;
+  position: relative;
+  top: 12px;
+  width: 660px;
+  margin-left: 60px;
+  height: 35px;
+  border-radius: 5rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  padding-left: 20px;
+  user-select: none;
+  transition: 0.4s ease-in-out;
 }
 
 .container-chat .container-input-msg.dark input {
-    border: none;
-    color: #fff;
-    background-color: #2a3942;
-    transition: 0.4s ease-in-out;
+  border: none;
+  color: #fff;
+  background-color: #2a3942;
+  transition: 0.4s ease-in-out;
 }
 
 .container-chat .container-input-msg i.ri-mic-fill {
-    position: absolute;
-    top: 20px;
-    right: 40px;
-    font-size: 1.1rem;
-    color: rgba(0, 0, 0, 0.8);
-    transition: 0.4s ease-in-out;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.8);
+  transition: 0.4s ease-in-out;
 }
 
 .container-chat .container-input-msg.dark i.ri-mic-fill {
-    color: #d1d7db;
-    transition: 0.4s ease-in-out;
+  color: #d1d7db;
+  transition: 0.4s ease-in-out;
 }
