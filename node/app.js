@@ -1,7 +1,7 @@
 import express from "express"
 import cors from "cors"
-import bd from "../connection/db.js"
-import chatRoutes from "../routers/Router.js"
+import bd from "./connection/bd.js"
+import chatRoutes from "./routers/Router.js"
 
 const app = express()
 
