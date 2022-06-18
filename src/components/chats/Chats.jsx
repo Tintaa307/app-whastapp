@@ -24,6 +24,12 @@ const Chats = () => {
     getChats()
   }
 
+  // update chat
+  const updateChat = async (id, name, content) => {
+    await axios.put(`${URI}${id}`, { name, content })
+    getChats()
+  }
+
   return (
     <main className="container-chats">
       <div className="container-content">
@@ -61,6 +67,14 @@ const Chats = () => {
                     <i
                       className="ri-delete-bin-line"
                       onClick={() => deleteChat(chat.id)}
+                    ></i>
+                  </div>
+                  <div className="container-chat-item-header-update">
+                    <i
+                      className="ri-pencil-line"
+                      onClick={() =>
+                        updateChat(chat.id, chat.name, chat.content)
+                      }
                     ></i>
                   </div>
                 </div>
