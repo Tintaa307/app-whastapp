@@ -30,11 +30,30 @@ const Chats = () => {
     getChats()
   }
 
+  // filter chats
+  const filterChats = (e) => {
+    const text = e.target.value
+    const filteredChats = chats.filter((chat) => {
+      const nick = document.querySelector(".busqueda").value
+      if (nick === "") {
+        return getChats() // .findAll((chat) => chat.name.includes(text))
+      } else {
+        return chat.name.toLowerCase().includes(text.toLowerCase())
+      }
+    })
+    setChats(filteredChats)
+  }
+
   return (
     <main className="container-chats">
       <div className="container-content">
         <div className="container-search">
-          <input type="text" className="busqueda" max={"20"} />
+          <input
+            onBeforeInputCapture={filterChats}
+            type="text"
+            className="busqueda"
+            max={"20"}
+          />
           <i class="ri-search-2-line"></i>
         </div>
         <div className="container-add-chat">
@@ -51,10 +70,10 @@ const Chats = () => {
                 initial={{ opacity: 0, y: 200 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.3,
+                  duration: 0.5,
                   type: "spring",
-                  bounce: 0.5,
-                  delay: chat.id * 0.3,
+                  bounce: 0.3,
+                  delay: chat.id * 0.1,
                 }}
                 className="container-chat-item"
                 key={chat.id}

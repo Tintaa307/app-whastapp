@@ -20,7 +20,7 @@ const CompCreateChat = () => {
   }
 
   return (
-    <div className="container-create-chat">
+    <motion.div className="container-create-chat">
       <motion.h1
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -62,7 +62,7 @@ const CompCreateChat = () => {
           <i class="ri-arrow-left-line"></i>Volver
         </Link>
       </form>
-    </div>
+    </motion.div>
   )
 }
 
