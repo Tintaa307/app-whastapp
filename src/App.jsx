@@ -10,6 +10,7 @@ import ButtonDarkMode from "./components/buttonDark/DarkMode"
 import LogoutButton from "./components/login/Logout.jsx"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import CompCreateChat from "./chatsConfig/CreateChat"
+import CompUpdateChat from "./chatsConfig/EditChat"
 
 function App() {
   const { isAuthenticated } = useAuth0()
@@ -27,6 +28,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Chats />} />
               <Route path="/create" element={<CompCreateChat />} />
+              <Route path="/update/:id" element={<CompUpdateChat />} />
             </Routes>
           </BrowserRouter>
         </>

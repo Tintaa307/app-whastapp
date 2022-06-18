@@ -87,12 +87,14 @@ const Chats = () => {
                     ></i>
                   </div>
                   <div className="container-chat-item-header-update">
-                    <i
-                      className="ri-pencil-line"
-                      onClick={() =>
-                        updateChat(chat.id, chat.name, chat.content)
-                      }
-                    ></i>
+                    <Link to={`/update/${chat.id}`} className="link">
+                      <i
+                        className="ri-pencil-line"
+                        onClick={() =>
+                          updateChat(chat.id, chat.name, chat.content)
+                        }
+                      ></i>
+                    </Link>
                   </div>
                 </div>
                 <div className="container-chat-item-content">

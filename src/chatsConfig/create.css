@@ -15,6 +15,10 @@
   margin: 40px 120px;
 }
 
+.container-create-chat h1.title-update-chat {
+  margin: 40px 155px;
+}
+
 .container-create-chat h1.dark {
   color: #fff;
 }
