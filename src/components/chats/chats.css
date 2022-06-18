@@ -13,6 +13,27 @@
   transition: 0.4s ease-in-out;
 }
 
+.container-chats.dark h2 {
+  color: #fff !important;
+  transition: 0.4s ease-in-out;
+}
+
+.container-chats.dark p {
+  color: #fff !important;
+  transition: 0.4s ease-in-out;
+}
+
+.container-chats.dark .container-chat-item {
+  border-top: 1px solid rgba(255, 255, 255, 0.336) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.336) !important;
+  transition: 0.4s ease-in-out;
+}
+
+.container-chats.dark .container-chat-item i {
+  color: #ff0000 !important;
+  transition: 0.4s ease-in-out;
+}
+
 .container-chats .container-content .container-search {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.589);
@@ -83,6 +104,11 @@
   z-index: 2;
 }
 
+.container-chats .container-content .container-add-chat button .link {
+  color: #000;
+  text-decoration: none;
+}
+
 .container-chats .container-content .container-add-chat.dark button {
   background-color: #2a3942;
   color: #fff;
@@ -97,4 +123,49 @@
 .container-chats .container-content .container-add-chat:hover {
   background-color: rgba(255, 255, 255, 0.589);
   transition: 0.4s ease-in-out;
+}
+
+.container-chats-list {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: -204px;
+}
+
+.container-chats-list .container-chat-item {
+  width: 511px;
+  height: 85px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.container-chats-list .container-chat-item .container-chat-item-header-name h2 {
+  color: #000;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  margin-left: 10px;
+}
+
+.container-chats-list
+  .container-chat-item
+  .container-chat-item-header-delete
+  i {
+  position: absolute;
+  margin-top: -25px;
+  left: 470px;
+  font-size: 1.3rem;
+  color: #000;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.container-chats-list .container-chat-item .container-chat-item-content p {
+  position: absolute;
+  left: 10px;
+  margin-top: 1rem;
+  transition: 0.4s ease-in-out;
+  color: rgba(0, 0, 0, 0.8);
 }

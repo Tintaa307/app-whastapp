@@ -19,6 +19,9 @@ const ButtonDarkMode = (props) => {
       document.querySelector(".container-input-msg").classList.toggle("dark")
       document.querySelector(".container-emotes").classList.toggle("dark")
       document.querySelector(".container-chat-msg").classList.toggle("dark")
+      document.querySelector(".container-create-chat").classList.toggle("dark")
+      document.querySelector(".formulario").classList.toggle("dark")
+      document.querySelector(".container-chats-list").classList.toggle("dark")
     } else {
       document.querySelector(".header-container").classList.remove("dark")
       document.querySelector(".opcion").classList.remove("dark")
@@ -32,6 +35,9 @@ const ButtonDarkMode = (props) => {
       document.querySelector(".container-input-msg").classList.remove("dark")
       document.querySelector(".container-emotes").classList.remove("dark")
       document.querySelector(".container-chat-msg").classList.remove("dark")
+      document.querySelector(".container-create-chat").classList.remove("dark")
+      document.querySelector(".formulario").classList.remove("dark")
+      document.querySelector(".container-chats-list").classList.remove("dark")
     }
   }
 

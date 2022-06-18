@@ -1,0 +1,103 @@
+.container-create-chat {
+  width: 99%;
+  height: 88.75vh;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.4s ease-in-out;
+}
+
+.container-create-chat.dark {
+  background-color: #111b21;
+  transition: 0.4s ease-in-out;
+}
+
+.container-create-chat h1 {
+  margin: 40px 120px;
+}
+
+.container-create-chat h1.dark {
+  color: #fff;
+}
+
+.container-create-chat .formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-create-chat .formulario input {
+  width: 220px;
+  height: 35px;
+  margin-left: 140px;
+  border-radius: 5px;
+  outline: none;
+  padding: 0 5px;
+  margin-bottom: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.container-create-chat .formulario.dark input {
+  border: none;
+  color: #fff;
+  background-color: #2a3942;
+  transition: 0.4s ease-in-out;
+}
+
+.container-create-chat .formulario textarea {
+  width: 220px;
+  height: 80px;
+  margin-left: 140px;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 5px;
+  margin-bottom: 70px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.container-create-chat .formulario.dark textarea {
+  border: none;
+  color: #fff;
+  background-color: #2a3942;
+  transition: 0.4s ease-in-out;
+}
+
+.container-create-chat .formulario button {
+  width: 220px;
+  height: 40px;
+  outline: none;
+  border-radius: 10px;
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: #002ebc;
+  margin-left: 140px;
+  margin-bottom: 40px;
+}
+
+.container-create-chat .formulario.dark button {
+  box-shadow: 0 0 12px #002ebc;
+}
+
+.container-create-chat .formulario .back-to {
+  color: #000;
+  font-size: 1.1rem;
+  margin-left: 205px;
+  cursor: pointer;
+  animation: appear 0.7s;
+  animation-delay: 2.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.container-create-chat .formulario .back-to i {
+  position: relative;
+  top: 4px;
+  font-size: 1.3rem;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
