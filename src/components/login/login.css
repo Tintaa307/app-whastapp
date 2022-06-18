@@ -5,14 +5,14 @@
   transform: translateX(-50%);
 }
 
-.container-btn button {
+.container-btn button.login-button {
   width: 330px;
   height: 35px;
   border-radius: 5px;
   color: #fff;
   text-align: center;
   justify-content: center;
-  font-size: .9rem;
+  font-size: 0.9rem;
   background-color: #0c481f;
   outline: none;
   border: 1px solid #fff;
@@ -20,7 +20,29 @@
   transition: 0.3s ease-in-out;
 }
 
-.container-btn button:hover {
+.container-btn button.logout-button {
+  position: absolute;
+  top: -185px;
+  left: -83px;
+  background-color: transparent;
+  border: none;
+  width: 167px;
+  height: 30px;
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-right: 68px;
+  padding-bottom: 18px;
+  font-family: var(--body-font);
+  transition: 0.4s ease-in-out;
+}
+
+.container-btn button.logout-button.dark {
+  color: #fff;
+  transition: 0.4s ease-in-out;
+}
+
+.container-btn button.login-button:hover {
   transform: translateY(-5px);
   transition: 0.3s ease-in-out;
 }

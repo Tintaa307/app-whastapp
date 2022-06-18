@@ -22,8 +22,8 @@ function App() {
       {isAuthenticated ? (
         <>
           <BrowserRouter>
-            <Nav />
             <ButtonDarkMode propiety={className} />
+            <Nav />
             <Chat />
             <Routes>
               <Route path="/" element={<Chats />} />

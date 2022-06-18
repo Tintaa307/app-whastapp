@@ -9,6 +9,12 @@ const ButtonDarkMode = (props) => {
       opcion.forEach((item) => {
         item.classList.toggle("dark")
       })
+      const configs = document.querySelectorAll(".item")
+      configs.forEach((item) => {
+        item.classList.toggle("dark")
+      })
+      document.querySelector(".container-config").classList.toggle("dark")
+      document.querySelector(".logout-button").classList.toggle("dark")
       document.querySelector(".container-img").classList.toggle("dark")
       document.querySelector(".container-chats").classList.toggle("dark")
       document.querySelector(".container-search").classList.toggle("dark")
@@ -22,7 +28,7 @@ const ButtonDarkMode = (props) => {
       document.querySelector(".container-create-chat").classList.toggle("dark")
       document.querySelector(".formulario").classList.toggle("dark")
       document.querySelector(".container-chats-list").classList.toggle("dark")
-    } else {
+    } /*else {
       document.querySelector(".header-container").classList.remove("dark")
       document.querySelector(".opcion").classList.remove("dark")
       document.querySelector(".container-img").classList.remove("dark")
@@ -38,7 +44,10 @@ const ButtonDarkMode = (props) => {
       document.querySelector(".container-create-chat").classList.remove("dark")
       document.querySelector(".formulario").classList.remove("dark")
       document.querySelector(".container-chats-list").classList.remove("dark")
-    }
+      document.querySelector(".container-config").classList.remove("dark")
+      document.querySelector(".item").classList.remove("dark")
+      document.querySelector(".logout-button").classList.remove("dark")
+    }*/
   }
 
   return (

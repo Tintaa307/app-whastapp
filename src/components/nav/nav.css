@@ -22,7 +22,6 @@
   box-shadow: 0 0 12px #005400;
 }
 
-
 .header-container .container-nav .container-opcions {
   position: absolute;
   top: 35px;
@@ -41,4 +40,63 @@
 
 .header-container .container-nav .container-opcions .opcion.dark i {
   color: #d1d7db;
+}
+
+.header-container .container-nav .container-config {
+  position: absolute;
+  top: 50px;
+  left: 315px;
+  z-index: 2;
+  width: 170px;
+  height: max-content;
+  background-color: #d1d7db;
+  border: 1px solid #000;
+  transform: scaleY(0);
+  transition: 0.4s ease-in-out;
+  transform-origin: top;
+}
+
+.header-container .container-nav .container-config.dark {
+  background-color: #202c33 !important;
+  transition: 0.4s ease-in-out;
+}
+
+.header-container .container-nav .container-config.appear {
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: 0.4s ease-in-out;
+}
+
+.header-container .container-nav .container-config .item {
+  padding: 15px 10px;
+  transition: 0.4s ease-in-out;
+}
+
+.header-container .container-nav .container-config .item:nth-child(4) {
+  padding-bottom: 30px;
+}
+
+.header-container .container-nav .container-config .item h6 {
+  color: #000;
+  font-size: 0.8rem;
+  transition: 0.4s ease-in-out;
+}
+
+.header-container .container-nav .container-config .item.dark h6 {
+  color: #fff !important;
+  transition: 0.4s ease-in-out;
+}
+
+.header-container .container-nav .container-config .item:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.header-container .container-nav .container-config .item.dark:hover {
+  background-color: #2a3942 !important;
+  color: #000;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
 }
