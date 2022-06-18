@@ -45,7 +45,7 @@ const Chats = () => {
                 initial={{ opacity: 0, y: 200 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.7,
+                  duration: 0.3,
                   type: "spring",
                   bounce: 0.5,
                   delay: chat.id * 0.3,
