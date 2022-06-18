@@ -32,14 +32,12 @@ const Chats = () => {
 
   // filter chats
   const filterChats = (e) => {
-    const text = e.target.value
+    const text = document.querySelector(".busqueda").value
     const filteredChats = chats.filter((chat) => {
-      const nick = document.querySelector(".busqueda").value
-      if (nick === "") {
-        return getChats() // .findAll((chat) => chat.name.includes(text))
-      } else {
-        return chat.name.toLowerCase().includes(text.toLowerCase())
+      while (text === "") {
+        return getChats()
       }
+      return chat.name.toLowerCase().includes(text.toLowerCase())
     })
     setChats(filteredChats)
   }
@@ -49,7 +47,7 @@ const Chats = () => {
       <div className="container-content">
         <div className="container-search">
           <input
-            onBeforeInputCapture={filterChats}
+            onChange={filterChats}
             type="text"
             className="busqueda"
             max={"20"}
