@@ -3,10 +3,13 @@ import "./chats.css"
 import { Link } from "react-router-dom"
 import axios from "axios"
 import { motion } from "framer-motion"
+import { useContext } from "react"
+import themeContext from "../../context/darkContext"
 
 const URI = "http://localhost:8000/chats/"
 
 const Chats = () => {
+  const { darkmode } = useContext(themeContext)
   const [chats, setChats] = useState([])
   useEffect(() => {
     getChats()
@@ -43,9 +46,9 @@ const Chats = () => {
   }
 
   return (
-    <main className="container-chats">
+    <main className={["container-chats", darkmode].join(" ")}>
       <div className="container-content">
-        <div className="container-search">
+        <div className={["container-search", darkmode].join(" ")}>
           <input
             onChange={filterChats}
             type="text"
@@ -54,7 +57,7 @@ const Chats = () => {
           />
           <i class="ri-search-2-line"></i>
         </div>
-        <div className="container-add-chat">
+        <div className={["container-add-chat", darkmode].join(" ")}>
           <button className="btn-add-chat">
             <Link to={"/create"} className="link">
               Add new chat...
@@ -73,7 +76,7 @@ const Chats = () => {
                   bounce: 0.3,
                   delay: chat.id * 0.1,
                 }}
-                className="container-chat-item"
+                className={["container-chat-item", darkmode].join(" ")}
                 key={chat.id}
               >
                 <div className="container-chat-item-header">

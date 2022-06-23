@@ -1,59 +1,14 @@
+import { useContext } from "react"
 import { React, useState } from "react"
 import "./button.css"
+import themeContext from "../../context/darkContext"
 
-const ButtonDarkMode = (props) => {
-  const darkMode = () => {
-    if (props.propiety === "dark") {
-      document.querySelector(".header-container").classList.toggle("dark")
-      const opcion = document.querySelectorAll(".opcion")
-      opcion.forEach((item) => {
-        item.classList.toggle("dark")
-      })
-      const configs = document.querySelectorAll(".item")
-      configs.forEach((item) => {
-        item.classList.toggle("dark")
-      })
-      document.querySelector(".container-config").classList.toggle("dark")
-      document.querySelector(".logout-button").classList.toggle("dark")
-      document.querySelector(".container-img").classList.toggle("dark")
-      document.querySelector(".container-chats").classList.toggle("dark")
-      document.querySelector(".container-search").classList.toggle("dark")
-      document.querySelector(".container-add-chat").classList.toggle("dark")
-      document.querySelector(".container-chat-nav").classList.toggle("dark")
-      document.querySelector(".container-info-user").classList.toggle("dark")
-      document.querySelector(".container-icons").classList.toggle("dark")
-      document.querySelector(".container-input-msg").classList.toggle("dark")
-      document.querySelector(".container-emotes").classList.toggle("dark")
-      document.querySelector(".container-chat-msg").classList.toggle("dark")
-      document.querySelector(".container-create-chat").classList.toggle("dark")
-      document.querySelector(".formulario").classList.toggle("dark")
-      document.querySelector(".container-chats-list").classList.toggle("dark")
-    } /*else {
-      document.querySelector(".header-container").classList.remove("dark")
-      document.querySelector(".opcion").classList.remove("dark")
-      document.querySelector(".container-img").classList.remove("dark")
-      document.querySelector(".container-chats").classList.remove("dark")
-      document.querySelector(".container-search").classList.remove("dark")
-      document.querySelector(".container-add-chat").classList.remove("dark")
-      document.querySelector(".container-chat-nav").classList.remove("dark")
-      document.querySelector(".container-info-user").classList.remove("dark")
-      document.querySelector(".container-icons").classList.remove("dark")
-      document.querySelector(".container-input-msg").classList.remove("dark")
-      document.querySelector(".container-emotes").classList.remove("dark")
-      document.querySelector(".container-chat-msg").classList.remove("dark")
-      document.querySelector(".container-create-chat").classList.remove("dark")
-      document.querySelector(".formulario").classList.remove("dark")
-      document.querySelector(".container-chats-list").classList.remove("dark")
-      document.querySelector(".container-config").classList.remove("dark")
-      document.querySelector(".item").classList.remove("dark")
-      document.querySelector(".logout-button").classList.remove("dark")
-    }*/
-  }
-
+const ButtonDarkMode = () => {
+  const { toggleDarkmode } = useContext(themeContext)
   return (
     <div className="container-btn-2">
       <label class="switch">
-        <input onClick={darkMode} type="checkbox" />
+        <input onClick={toggleDarkmode} type="checkbox" />
         <span class="slider"></span>
       </label>
     </div>

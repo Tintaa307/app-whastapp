@@ -1,6 +1,6 @@
 /* ============= GOOGLE FONTS ============= */
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
 
 /* ============= VARIABLES CSS ============= */
 
@@ -83,29 +83,28 @@
 */
 
 :root {
-
   /* =========== COLORS =========== */
   --hue: 152;
-  --color-main:#271c37;
+  --color-main: #271c37;
   --color-main-alt: #252146;
   --color-main-light: #2e2a4f;
   --color-main-lighten: #392b68;
   --title-color: #fff;
   --text-color: #000;
   --text-color-light: #b3b4d0;
-  --body-color:#fff;
+  --body-color: #fff;
   --container-color: #2c274f;
   --gold: #bd9e59;
 
   /* =========== FONT TYPE =========== */
-  --body-font: 'Exo', sans-serif;
-  --details-font: 'La Belle Aurore', cursive;
+  --body-font: "Exo", sans-serif;
+  --details-font: "La Belle Aurore", cursive;
   --h1-font-size: 1.75rem;
-  --h2-font-size: 1.50rem;
+  --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
   --default-size: 1rem;
-  --sm-size: .883rem;
-  --sxm-size: .75rem;
+  --sm-size: 0.883rem;
+  --sxm-size: 0.75rem;
 }
 
 /* ============= BASE CSS ============= */
@@ -138,7 +137,12 @@ body.dark {
   background-color: #1e1e1e;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--text-color);
   font-weight: 600;
 }
@@ -153,4 +157,12 @@ a {
 
 section.section {
   margin-top: 4rem;
+}
+
+button {
+  user-select: none;
+}
+
+input {
+  user-select: none;
 }

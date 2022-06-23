@@ -23,30 +23,6 @@
   transition: 0.4s ease-in-out;
 }
 
-.container-chats.dark .container-chat-item {
-  border-top: 1px solid rgba(255, 255, 255, 0.336) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.336) !important;
-  transition: 0.4s ease-in-out;
-  background-color: #111b21 !important;
-}
-
-.container-chats.dark .container-chat-item:hover {
-  background-color: #202c33 !important;
-  transition: 0.4s ease-in-out;
-}
-
-.container-chats.dark .container-chat-item i.ri-delete-bin-line {
-  color: #ff0000 !important;
-  transition: 0.4s ease-in-out;
-  text-shadow: 0 0 12px #ff0000;
-}
-
-.container-chats.dark .container-chat-item i.ri-pencil-line {
-  color: #003ddd !important;
-  transition: 0.4s ease-in-out;
-  text-shadow: 0 0 12px #003ddd;
-}
-
 .container-chats .container-content .container-search {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.589);
@@ -156,6 +132,18 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
+.container-chats-list .container-chat-item.dark {
+  border-top: 1px solid rgba(255, 255, 255, 0.336) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.336) !important;
+  transition: 0.4s ease-in-out;
+  background-color: #111b21 !important;
+}
+
+.container-chats-list .container-chat-item.dark:hover {
+  background-color: #202c33 !important;
+  transition: 0.4s ease-in-out;
+}
+
 .container-chats-list .container-chat-item:hover {
   background-color: rgba(0, 0, 0, 0.5);
   transition: 0.4s ease-in-out;
@@ -168,6 +156,15 @@
   transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   margin-left: 20px;
+}
+
+.container-chats-list
+  .container-chat-item.dark
+  .container-chat-item-header-delete
+  i {
+  color: #ff0000 !important;
+  transition: 0.4s ease-in-out;
+  text-shadow: 0 0 12px #ff0000;
 }
 
 .container-chats-list
@@ -194,6 +191,15 @@
   color: #000;
   transition: 0.4s ease-in-out;
   cursor: pointer;
+}
+
+.container-chats-list
+  .container-chat-item.dark
+  .container-chat-item-header-update
+  i {
+  color: #003ddd !important;
+  transition: 0.4s ease-in-out;
+  text-shadow: 0 0 12px #003ddd;
 }
 
 .container-chats-list .container-chat-item .container-chat-item-content p {

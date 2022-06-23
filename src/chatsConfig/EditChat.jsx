@@ -1,8 +1,9 @@
-import { React, useState, useEffect } from "react"
+import { React, useState, useEffect, useContext } from "react"
 import { motion } from "framer-motion"
 import "./create.css"
 import axios from "axios"
 import { Link, useNavigate, useParams } from "react-router-dom"
+import themeContext from "../context/darkContext"
 
 const URI = "http://localhost:8000/chats/"
 
@@ -11,6 +12,7 @@ const CompUpdateChat = () => {
   const [content, setContent] = useState("")
   const navigate = useNavigate()
   const { id } = useParams()
+  const { darkmode } = useContext(themeContext)
 
   const updateChat = async (e) => {
     e.preventDefault()
@@ -32,7 +34,7 @@ const CompUpdateChat = () => {
   }
 
   return (
-    <motion.div className="container-create-chat">
+    <motion.div className={["container-create-chat", darkmode].join(" ")}>
       <motion.h1
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -41,7 +43,10 @@ const CompUpdateChat = () => {
       >
         Update chat
       </motion.h1>
-      <form className="formulario" onSubmit={updateChat}>
+      <form
+        className={["formulario", darkmode].join(" ")}
+        onSubmit={updateChat}
+      >
         <motion.input
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

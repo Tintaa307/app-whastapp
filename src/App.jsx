@@ -11,25 +11,26 @@ import LogoutButton from "./components/login/Logout.jsx"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import CompCreateChat from "./chatsConfig/CreateChat"
 import CompUpdateChat from "./chatsConfig/EditChat"
+import { DarkContext } from "./context/darkContext"
 
 function App() {
   const { isAuthenticated } = useAuth0()
-  const [darkmode, setDarkmode] = useState(false)
-  const className = darkmode ? "dark" : setDarkmode(!darkmode)
 
   return (
     <div className="container-all">
       {isAuthenticated ? (
         <>
           <BrowserRouter>
-            <ButtonDarkMode propiety={className} />
-            <Nav />
-            <Chat />
-            <Routes>
-              <Route path="/" element={<Chats />} />
-              <Route path="/create" element={<CompCreateChat />} />
-              <Route path="/update/:id" element={<CompUpdateChat />} />
-            </Routes>
+            <DarkContext>
+              <ButtonDarkMode />
+              <Nav />
+              <Chat />
+              <Routes>
+                <Route path="/" element={<Chats />} />
+                <Route path="/create" element={<CompCreateChat />} />
+                <Route path="/update/:id" element={<CompUpdateChat />} />
+              </Routes>
+            </DarkContext>
           </BrowserRouter>
         </>
       ) : (
